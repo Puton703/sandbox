@@ -6,6 +6,7 @@ from PyQt5.QtCore import *
 class MainWindow(QWidget):
     def __init__(self, parent=None):
         super(MainWindow, self).__init__(parent)
+        self.button = QPushButton("test", self)
 
 
 if __name__ == "__main__":

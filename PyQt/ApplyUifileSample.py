@@ -15,8 +15,12 @@ class MainWindow(QWidget):
         ui_path = "resources/ui/sample.ui"
         print ui_path
         self.ui = loadUi(ui_path, self)
+        self.ui.pushButton.clicked.connect(self.hello)
+
         self.show()
 
+    def hello(self):
+        print "hello"
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
